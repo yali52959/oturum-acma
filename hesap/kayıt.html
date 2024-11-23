@@ -7,8 +7,46 @@
     <meta name="description" content="Şaplik kedi resimleri mi lazım? Geniş kedi resmi koleksiyonumuzdan istediğinizi seçin!">
     <meta name="keywords" content="oturum, açma, resim, beleş, fotoğraf, kedi">
     <title>Kaydol</title>
+    <style>
+        table, th, td {
+          border: 4px solid rgb(0, 0, 255);
+          border-collapse: collapse;
+        }
+        </style>
 </head>
 <body>
-    
+    <img src="My cat profile picture edition.jpg" alt="Logo" width="320" height="240">
+    <h1>Kaydol</h1>
+    <form action="#" method="post">
+    <table>
+        <tr>
+          <td><label for="username">Kullanıcı adı</label></td>
+          <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+            <td><label for="password">Şifre</label></td>
+            <td><input type="password" id="password" name="password"></td>
+        </tr>
+        <tr>
+          <td><label for="birthdate">Doğum Tarihi</label></td>
+          <td><input type="date" id="birthdate" name="birthdate"></td>
+        </tr>
+        <tr>
+            <td><label for="gender">Cinsiyetiniz</label></td>
+            <td>
+                <input type="radio" id="male" name="gender" value="erkek">
+                <label for="html">erkek</label>
+                <input type="radio" id="css" name="gender" value="erkek">
+                <label for="female">kadın</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="picture">Profil resmi</label></td>
+            <td><input type="file" id="photo" name="photo"></td>
+        </tr>
+    </table>
+     <button type="submit">Giriş Yap</button><br>
+     <button type="reset">Sıfırla</button>
+</form>
 </body>
 </html>
